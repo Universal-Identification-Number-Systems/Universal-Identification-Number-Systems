@@ -1,4 +1,3 @@
-# Universal-Identification-Number-Systems
 # Universal Identification Number Systems (UUIS)
 
 ## 1. System Goal
@@ -16,9 +15,9 @@ Purpose: Enable cross-sector integration with a single ID usable by governments,
 
 ## 3. UUIS Example Structure
 
-* Vehicle UUIS: `UUIS-TR-VEH-20250914-8f3a5c2b7d1e9f0a4c6d8e2f7b1c3d9e`
-* Person UUIS: `UUIS-TR-PER-20250914-9d4f7e3b1c2a8f6b5e7d9a1c3f4b6e8d`
-* Certificate UUIS: `UUIS-TR-CERT-20250914-abcdef1234567890`
+* Vehicle UUIS: `UUIS-KU-VEH-20250914-8f3a5c2b7d1e9f0a4c6d8e2f7b1c3d9e`
+* Person UUIS: `UUIS-KU-PER-20250914-9d4f7e3b1c2a8f6b5e7d9a1c3f4b6e8d`
+* Certificate UUIS: `UUIS-KU-CERT-20250914-abcdef1234567890`
 
 ## 4. API Overview
 
@@ -32,12 +31,13 @@ Example:
 ```http
 POST /api/v1/person
 {
-  "first_name": "Ahmet",
-  "last_name": "Yılmaz",
-  "birth_date": "1990-05-23",
-  "country": "TR"
+  "first_name": "Enes",
+  "last_name": "Balikci",
+  "birth_date": "2005-06-09",
+  "birth_city": "Eleskirt",
+  "country": "Kurdistan"
 }
-→ Returns: "uuis": "UUIS-TR-PER-20250914-9d4f7e3b1c2a8f6b5e7d9a1c3f4b6e8d"
+→ Returns: "uuis": "UUIS-KU-PER-20250914-9d4f7e3b1c2a8f6b5e7d9a1c3f4b6e8d"
 ```
 
 ## 5. Sector Use Cases
